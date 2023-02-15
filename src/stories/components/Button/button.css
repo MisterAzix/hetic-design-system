@@ -1,9 +1,13 @@
 .btn-stack {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
   justify-content: flex-start;
   align-items: center;
-  gap: 0.5rem;
+}
+
+.btn-stack .btn {
+  width: min(250px, 100%);
 }
 
 .btn {
@@ -12,7 +16,7 @@
   width: 100%;
   font-size: 1rem;
   border: 1px solid transparent;
-  border-radius: 2rem;
+  border-radius: 4px;
   outline: 0;
   cursor: pointer;
   font-family: roboto, sans-serif;
@@ -98,11 +102,15 @@
   color: white;
 }
 
-.btn-outlined, .btn-outlined:hover, .btn-outlined:active {
+.btn-outlined,
+.btn-outlined:hover,
+.btn-outlined:active {
   background-color: transparent;
 }
 
-.btn-void, .btn-void:hover, .btn-void:active {
+.btn-void,
+.btn-void:hover,
+.btn-void:active {
   border-color: transparent;
   background-color: transparent;
 }
