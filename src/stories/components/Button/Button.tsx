@@ -7,6 +7,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: Variant;
   color?: Color;
   size?: Size;
+  disabled?: boolean;
   startIcon?: React.ReactNode;
   endIcon?: React.ReactNode;
 }
@@ -16,6 +17,7 @@ export const Button = ({
   color = 'primary',
   size = 'md',
   children,
+  disabled = false,
   startIcon,
   endIcon,
   ...props
@@ -24,6 +26,7 @@ export const Button = ({
     <button
       className={[`btn`, `btn-${color}`, `btn-${variant}`, `btn-${size}`].join(' ')}
       type="button"
+      disabled={disabled}
       {...props}
     >
       <div className={'btn-content'}>
