@@ -76,6 +76,17 @@ export const Sizes = () => (
   </div>
 );
 
+export const WithIcon = () => (
+  <div className={'btn-stack'}>
+    <Button startIcon disabled>
+      Primary
+    </Button>
+    <Button endIcon disabled>
+      Primary
+    </Button>
+  </div>
+);
+
 export const Disabled = () => (
   <div className={'btn-stack'}>
     <Button variant="filled" disabled>
