@@ -1,7 +1,7 @@
 import React, { ButtonHTMLAttributes } from 'react';
 import { Color, Size, Variant } from '../../types';
-import './button.css';
-import '../../../styles/globals.css';
+import './button.scss';
+import '../../../styles/globals.scss';
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: Variant;
