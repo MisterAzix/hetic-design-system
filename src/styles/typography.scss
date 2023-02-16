@@ -1,0 +1,49 @@
+@import "mixins";
+
+.heading-1 {
+  @include font-heading-1;
+}
+
+.heading-1-bold {
+  @include font-heading-1-bold;
+}
+
+.heading-2 {
+  @include font-heading-2;
+}
+
+.heading-2-bold {
+  @include font-heading-2-bold;
+}
+
+.title-1 {
+  @include font-title-1;
+}
+
+.title-1-bold {
+  @include font-title-1-bold;
+}
+
+.title-2 {
+  @include font-title-2;
+}
+
+.title-2-bold {
+  @include font-title-2-bold;
+}
+
+.subtitle {
+  @include font-subtitle;
+}
+
+.body {
+  @include font-body;
+}
+
+.body-medium {
+  @include font-medium;
+}
+
+.caption {
+  @include font-caption;
+}

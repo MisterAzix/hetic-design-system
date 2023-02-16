@@ -1,0 +1,83 @@
+@mixin font-heading-1 {
+  font-family: var(--global-font-family);
+  font-size: 48.83px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin font-heading-1-bold {
+  font-family: var(--global-font-family);
+  font-size: 48.83px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+@mixin font-heading-2 {
+  font-family: var(--global-font-family);
+  font-size: 39.96px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin font-heading-2-bold {
+  font-family: var(--global-font-family);
+  font-size: 39.96px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+@mixin font-title-1 {
+  font-family: var(--global-font-family);
+  font-size: 31.25px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin font-title-1-bold {
+  font-family: var(--global-font-family);
+  font-size: 31.25px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+@mixin font-title-2 {
+  font-family: var(--global-font-family);
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin font-title-2-bold {
+  font-family: var(--global-font-family);
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+@mixin font-subtitle {
+  font-family: var(--global-font-family);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin font-body {
+  font-family: var(--global-font-family);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin font-medium {
+  font-family: var(--global-font-family);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+@mixin font-caption {
+  font-family: var(--global-font-family);
+  font-size: 12.8px;
+  font-style: normal;
+  font-weight: 400;
+}
