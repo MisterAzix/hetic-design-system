@@ -2,6 +2,7 @@ import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import { Button } from './Button';
+import { ArrowLeft, ArrowRight } from '../Icons';
 
 export default {
   title: 'Example/Button',
@@ -78,11 +79,18 @@ export const Sizes = () => (
 
 export const WithIcon = () => (
   <div className={'btn-stack'}>
-    <Button startIcon disabled>
-      Primary
+    <Button startIcon={<ArrowLeft width={'1.25rem'} height={'1.25rem'} />} disabled>
+      Left Icon
     </Button>
-    <Button endIcon disabled>
-      Primary
+    <Button
+      startIcon={<ArrowLeft width={'1.25rem'} height={'1.25rem'} />}
+      endIcon={<ArrowRight width={'1.25rem'} height={'1.25rem'} />}
+      disabled
+    >
+      Left And Right Icons
+    </Button>
+    <Button endIcon={<ArrowRight width={'1.25rem'} height={'1.25rem'} />} disabled>
+      Right Icon
     </Button>
   </div>
 );
