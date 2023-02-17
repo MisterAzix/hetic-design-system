@@ -1,0 +1,72 @@
+@import "../../../styles/globals.scss";
+@import "../../../styles/mixins";
+
+.input-group {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.input-label {
+  @include font-body;
+  color: var(--global-dark-500);
+}
+
+.helper-text {
+  @include font-caption;
+  color: var(--global-dark-400);
+
+  &.error {
+    color: var(--global-danger-500);
+  }
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--global-dark-200);
+  border-radius: 0.25rem;
+  background-color: var(--global-white);
+  outline: 0;
+
+  &:focus-within {
+    border-color: var(--global-primary-500);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+
+  &.error {
+    border-color: var(--global-danger-500);
+  }
+}
+
+.input-adornment {
+  font-family: var(--global-font-family);
+  display: flex;
+  align-items: center;
+  -webkit-box-align: center;
+  white-space: nowrap;
+  height: 0.01rem;
+
+  &.prefix {
+    margin-left: 0.75rem;
+  }
+
+  &.suffix {
+    margin-right: 0.75rem;
+  }
+}
+
+.input {
+  font-family: var(--global-font-family);
+  padding: 0.5rem 0.75rem;
+  color: var(--global-dark-500);
+  font-size: 1rem;
+  width: 100%;
+  border: none;
+  border-radius: 1.5rem;
+  outline: 0;
+}
